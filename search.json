@@ -1,0 +1,42 @@
+[
+  {
+    "objectID": "stats.html",
+    "href": "stats.html",
+    "title": "Stats",
+    "section": "",
+    "text": "source\n\nfetch_match_stats\n\n fetch_match_stats (match_id)\n\n\nmatch_stats = fetch_match_stats(match_id = sample_match_id)\nprint(json.dumps(json.loads(match_stats), indent = 4))\n\n\nsource\n\n\nsave_match_stats\n\n save_match_stats (stats, filepath)\n\n\nfilepath = data_dir / f'stats/{sample_match_id}.txt'\nsave_match_stats(match_stats, filepath)",
+    "crumbs": [
+      "Stats"
+    ]
+  },
+  {
+    "objectID": "matches.html",
+    "href": "matches.html",
+    "title": "Matches",
+    "section": "",
+    "text": "source\n\nfetch_matches\n\n fetch_matches ()\n\n\nmatches_data = fetch_matches()\nprint(json.dumps(json.loads(matches_data), indent = 4))\n\n\nsource\n\n\nsave_matches\n\n save_matches (data, filepath)\n\n\nsave_matches(matches_data, filepath = data_dir / 'matches.txt')\n\n\nsource\n\n\nget_live_matches\n\n get_live_matches (filepath, now=datetime.datetime(2025, 9, 14, 1, 21, 7,\n                   897880, tzinfo=&lt;DstTzInfo 'Asia/Kolkata' IST+5:30:00\n                   STD&gt;))",
+    "crumbs": [
+      "Matches"
+    ]
+  },
+  {
+    "objectID": "wallstream.html",
+    "href": "wallstream.html",
+    "title": "Wallstream",
+    "section": "",
+    "text": "source\n\nfetch_wallstream\n\n fetch_wallstream (match_id)\n\n\nmatch_wallstream = fetch_wallstream(match_id = sample_match_id)\nprint(json.dumps(json.loads(match_wallstream), indent = 4))\n\n\nsource\n\n\nsave_wallstream\n\n save_wallstream (wallstream, filepath)\n\n\nfilepath = data_dir / f'wallstream/{sample_match_id}.txt'\nsave_wallstream(match_wallstream, filepath)",
+    "crumbs": [
+      "Wallstream"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Indian Super League (ISL)",
+    "section": "",
+    "text": "Development\n# Make sure `indian_super_league` package is installed in development mode.\n$ pip install -e '.[dev]'\n\n# Make changes under nbs/ directory.\n# ...\n\n# Preview your documentation locally.\n$ nbdev_preview\n\n# Compile to have changes apply to the `indian_super_league` package.\n$ nbdev_prepare",
+    "crumbs": [
+      "Indian Super League (ISL)"
+    ]
+  }
+]
