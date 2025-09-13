@@ -2,7 +2,7 @@ project:
   output-dir: _docs
 
 website:
-  title: "indian-super-league"
+  title: "Indian Super League (ISL)"
   site-url: "https://football-kowshik.github.io/indian-super-league"
   description: "The Indian Super League is a professional association football league in India and the highest level of the Indian football league system."
   repo-branch: main
