@@ -18,3 +18,17 @@ $ nbdev_preview
 # Compile to have changes apply to the `indian_super_league` package.
 $ nbdev_prepare
 ```
+
+
+# Datasets
+
+## Deduplicate file
+
+Command to deduplicate the `.txt` files inside a directory.
+
+```bash
+for f in *.txt; do
+  tmp=$(mktemp)
+  awk '!seen[$0]++' "$f" > "$tmp" && mv "$tmp" "$f"
+done
+```
