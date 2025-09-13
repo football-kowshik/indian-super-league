@@ -16,13 +16,15 @@ from pathlib import Path
 import pandas as pd
 
 # %% ../nbs/00_constants.ipynb 5
+#| eval: false
+#| output: false
 log_dir = Path('../logs')
 if not os.path.exists(log_dir):
-    os.makedirs(log_dir)
+    os.makedirs(log_dir, exist_ok=True)
 
 data_dir = Path('../data')
 if not os.path.exists(data_dir):
-    os.makedirs(data_dir)
+    os.makedirs(data_dir, exist_ok=True)
 
 logging.basicConfig(
     level=logging.INFO,
