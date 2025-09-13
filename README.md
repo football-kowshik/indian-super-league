@@ -7,16 +7,16 @@
 
 ``` bash
 # Make sure `indian_super_league` package is installed in development mode.
-$ pip install -e '.[dev]'
+pip install -e '.[dev]'
 
 # Make changes under nbs/ directory.
 # ...
 
 # Preview your documentation locally.
-$ nbdev_preview
+nbdev_preview
 
 # Compile to have changes apply to the `indian_super_league` package.
-$ nbdev_prepare
+nbdev_prepare
 ```
 
 
@@ -31,4 +31,11 @@ for f in *.txt; do
   tmp=$(mktemp)
   awk '!seen[$0]++' "$f" > "$tmp" && mv "$tmp" "$f"
 done
+```
+
+## git-lfs files
+
+```bash
+# List all files currently tracked by LFS (with their LFS object ID)
+git lfs ls-files
 ```
