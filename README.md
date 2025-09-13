@@ -12,6 +12,9 @@ $ pip install -e '.[dev]'
 # Make changes under nbs/ directory.
 # ...
 
-# Compile to have changes apply to indian_super_league.
+# Preview your documentation locally.
+$ nbdev_preview
+
+# Compile to have changes apply to the `indian_super_league` package.
 $ nbdev_prepare
 ```
