@@ -2,6 +2,7 @@ website:
   sidebar:
     contents:
       - index.ipynb
-      - 00_core.ipynb
+      - 00_constants.ipynb
       - 01_matches.ipynb
       - 02_stats.ipynb
+      - 03_wallstream.ipynb
